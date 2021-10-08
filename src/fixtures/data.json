@@ -1,0 +1,146 @@
+[
+	{
+		"subject": "Software Design and Development Project",
+		"code": "SWE3004",
+		"recommendedYear": 4,
+		"details": {
+			"percentage": 61.5,
+			"credit": 10
+		}
+	},
+	{
+		"subject": "Information and System Security",
+		"code": "SWE3002",
+		"recommendedYear": 3,
+		"details": {
+			"percentage": 61.5,
+			"credit": 4
+		}
+	},
+	{
+		"subject": "Operating Systems",
+		"code": "SWE3001",
+		"recommendedYear": 3,
+		"details": {
+			"percentage": 73.1,
+			"credit": 4
+		}
+	},
+	{
+		"subject": "Software Construction and Maintenance",
+		"code": "SWE2007",
+		"recommendedYear": 3,
+		"details": {
+			"percentage": 57.5,
+			"credit": 3
+		}
+	},
+	{
+		"subject": "Software Project Management",
+		"code": "SWE2006",
+		"recommendedYear": 3,
+		"details": {
+			"percentage": 50,
+			"credit": 3
+		}
+	},
+	{
+		"subject": "Software Testing",
+		"code": "SWE2005",
+		"recommendedYear": 2,
+		"details": {
+			"percentage": 57.7,
+			"credit": 4
+		}
+	},
+	{
+		"subject": "Software Architecture and Design",
+		"code": "SWE2004",
+		"recommendedYear": 2,
+		"details": {
+			"percentage": 84.6,
+			"credit": 3
+		}
+	},
+	{
+		"subject": "Requirements Engineering and Management",
+		"code": "SWE2003",
+		"recommendedYear": 2,
+		"details": {
+			"percentage": 88.5,
+			"credit": 3
+		}
+	},
+	{
+		"subject": "Computer Networks",
+		"code": "SWE2002",
+		"recommendedYear": 2,
+		"details": {
+			"percentage": 65.4,
+			"credit": 4
+		}
+	},
+	{
+		"subject": "Data Structures and Algorithims",
+		"code": "SWE2001",
+		"recommendedYear": 1,
+		"details": {
+			"percentage": 73.1,
+			"credit": 4
+		}
+	},
+	{
+		"subject": "Software Engineering",
+		"code": "SWE1701",
+		"recommendedYear": 1,
+		"details": {
+			"percentage": 76.9,
+			"credit": 3
+		}
+	},
+	{
+		"subject": "Programming in Java",
+		"code": "SWE1007",
+		"recommendedYear": 3,
+		"details": {
+			"percentage": 57.7,
+			"credit": 5
+		}
+	},
+	{
+		"subject": "Theory of Computation",
+		"code": "SWE1006",
+		"recommendedYear": 2,
+		"details": {
+			"percentage": 73.1,
+			"credit": 3
+		}
+	},
+	{
+		"subject": "Computer Architecture and Organization",
+		"code": "SWE1005",
+		"recommendedYear": 1,
+		"details": {
+			"percentage": 61.5,
+			"credit": 3
+		}
+	},
+	{
+		"subject": "Data Base Management Systems",
+		"code": "SWE1004",
+		"recommendedYear": 2,
+		"details": {
+			"percentage": 76.9,
+			"credit": 4
+		}
+	},
+	{
+		"subject": "Digital Logic and Microprocessors",
+		"code": "SWE1003",
+		"recommendedYear": 2,
+		"details": {
+			"percentage": 80.8,
+			"credit": 4
+		}
+	}
+]

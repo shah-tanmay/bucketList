@@ -1,0 +1,31 @@
+.bucket {
+	margin-left: 50px;
+	margin-top: 20px;
+}
+.bucketlist {
+	border-radius: 8px;
+	background: #333333;
+	padding: 10px;
+	padding-bottom: 2px !important;
+	width: 600px;
+}
+.border-info {
+	display: flex;
+}
+.bucket-card {
+	border-bottom: 1px solid #656565;
+}
+.total-credits {
+	font-size: 20px;
+	font-weight: bold;
+}
+.total-credits-less {
+	font-size: 23px;
+	color: #e94f64;
+	font-weight: bold;
+}
+.total-credits-more {
+	font-size: 23px;
+	color: #46bcde;
+	font-weight: bold;
+}
