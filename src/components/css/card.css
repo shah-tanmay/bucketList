@@ -1,0 +1,44 @@
+.card-main {
+	display: flex;
+	flex-direction: column;
+	min-width: 258px;
+	padding: 16px;
+	background: #f0f0f0;
+	box-shadow: 0px 4px 4px rgba(152, 117, 181, 0.24);
+	border-radius: 6px;
+	margin: 10px;
+}
+.card-text {
+	max-width: 270px;
+	font-style: normal;
+	font-weight: 600;
+	font-size: 18px;
+	color: #292929;
+	margin: 0px !important;
+	white-space: normal;
+}
+.card-code {
+	font-style: normal;
+	font-weight: normal;
+	font-size: 16px;
+	display: flex;
+	color: #292929;
+	margin: 0px !important;
+}
+.card-credits {
+	font-style: normal;
+	font-weight: normal;
+	font-size: 15px;
+	display: flex;
+	color: #292929;
+	margin: 20px 0px !important;
+}
+.credits {
+	margin-left: 4px;
+	color: #00adb5 !important;
+	font-weight: bold;
+}
+.card-flex {
+	display: flex;
+	justify-content: space-between;
+}

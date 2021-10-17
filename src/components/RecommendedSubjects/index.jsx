@@ -1,20 +1,22 @@
 import subjectData from "../../fixtures/data.json";
 import "../css/recommend.css";
 import Fuse from "fuse.js";
+import Card from "../Card";
 import { toast } from "react-toastify";
 
-const RecommendedSubjects = ({ year, bucketList, setBucketList }) => {
-	const YearToNumber = {
-		First: "1",
-		Second: "2",
-		Third: "3",
-		Fourth: "4",
+const RecommendedSubjects = ({ year, bucketList, setBucketList, style }) => {
+	const NumberToYear = {
+		1: "First",
+		2: "Second",
+		3: "Third",
+		4: "Fourth",
 	};
 	const options = {
 		keys: ["recommendedYear"],
 	};
 	const fuse = new Fuse(subjectData, options);
-	const results = fuse.search(YearToNumber[year]);
+	const results = fuse.search((year + 1).toString());
+	console.log(results);
 	const disabled = (data) => {
 		if (bucketList.includes(data)) {
 			return true;
@@ -44,32 +46,24 @@ const RecommendedSubjects = ({ year, bucketList, setBucketList }) => {
 	};
 	console.log("result", results);
 	return (
-		<div className="recommend-main">
-			<div className="recommend-title">Subjects Recommended in {year} Year</div>
-			{results.map((result) => {
-				return (
-					<div className="recommend-card">
-						<div>
-							Subject : {result.item.subject}
-							<div className="recommend-info">
-								<div>Code : {result.item.code}</div>
-								<div style={{ marginLeft: "20px" }}>
-									Credit : {result.item.details.credit}
-								</div>
-								<div style={{ marginLeft: "30px" }}>
-									<button
-										className="addto"
-										onClick={() => addToBucketList(result.item)}
-										disabled={disabled(result.item)}
-									>
-										{!disabled(result.item) ? "Add To Bucket List" : "Added"}
-									</button>
-								</div>
-							</div>
-						</div>
-					</div>
-				);
-			})}
+		<div className="recommend-main" style={style}>
+			<div className="recommend-title">
+				Subjects Recommended in{" "}
+				<span className="year">{NumberToYear[year + 1]}</span> Year
+			</div>
+			<div className="card-div">
+				{results.map((result) => {
+					return (
+						<Card
+							type="main"
+							text={result.item.subject}
+							code={result.item.code}
+							credits={result.item.details.credit}
+							onClick={() => addToBucketList(result.item)}
+						/>
+					);
+				})}
+			</div>
 		</div>
 	);
 };

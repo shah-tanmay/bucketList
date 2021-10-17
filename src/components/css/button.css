@@ -1,0 +1,47 @@
+.button {
+	display: flex;
+}
+.add {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	font-style: normal;
+	font-weight: 600;
+	font-size: 13px;
+	line-height: 26px;
+	color: #fffdfa;
+	max-width: 200px;
+	background: #00adb5;
+	border-radius: 4px;
+	border: none;
+	padding: 10px;
+	height: 2rem;
+}
+.remove {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	padding: 8px 12px;
+	background: #ec5656;
+	border-radius: 4px;
+	font-style: normal;
+	font-weight: 600;
+	font-size: 13px;
+	display: flex;
+	align-items: flex-end;
+	color: #f0f0f0;
+	border: none;
+}
+.button-icon {
+	margin-top: 2px;
+	height: 10px;
+	width: 10px;
+}
+.button-text {
+	padding-left: 5px;
+}
+button:hover {
+	cursor: pointer;
+}

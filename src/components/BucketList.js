@@ -1,28 +1,20 @@
+import Card from "./Card";
 import "./css/bucket.css";
-const BucketList = ({ bucketList }) => {
-	console.log(bucketList);
+const BucketList = ({ bucketList, style }) => {
+	console.log("bucketList", bucketList);
 	let totalCredits = 0;
 	bucketList.map((data) => {
 		totalCredits = totalCredits + data.details.credit;
 	});
+	const remove = (data) => {
+		const index = bucketList.indexOf(data);
+		bucketList.splice(index, 1);
+	};
 	return (
-		<div className="bucket">
-			{bucketList.length > 0 && "Bucket List"}
-			{bucketList.length > 0 ? (
-				<div className="bucketlist">
-					{bucketList.map((data) => {
-						return (
-							<div key={data.code} className="bucket-card">
-								Subject: {data.subject}
-								<div className="border-info">
-									<div>Code: {data.code}</div>
-									<div style={{ marginLeft: "20px" }}>
-										Credit: {data.details.credit}
-									</div>
-								</div>
-							</div>
-						);
-					})}
+		<div style={style} className="bucket">
+			{bucketList.length > 0 && (
+				<div className="bucket-header">
+					<div className="bucket-title">Bucket List</div>
 					<div className="total-credits">
 						Total Credits:{" "}
 						<span
@@ -34,8 +26,25 @@ const BucketList = ({ bucketList }) => {
 						</span>
 					</div>
 				</div>
+			)}
+			{bucketList.length > 0 ? (
+				<div>
+					{bucketList.map((data) => {
+						return (
+							<div key={data.code}>
+								<Card
+									type="bucketlist"
+									text={data.subject}
+									code={data.code}
+									credits={data.details.credit}
+									onClickRemove={() => remove(data)}
+								/>
+							</div>
+						);
+					})}
+				</div>
 			) : (
-				<div>Bucket List</div>
+				<div className="bucket-title">Bucket List</div>
 			)}
 		</div>
 	);

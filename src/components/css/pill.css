@@ -1,0 +1,36 @@
+.pill-main {
+	display: flex;
+	background: #ffffff;
+	max-width: 294px;
+	border-radius: 4px;
+	font-weight: 600;
+	font-size: 16px;
+	line-height: 19px;
+	color: #393e46;
+}
+.pill {
+	padding: 5px 12px;
+	border-right: 2px solid#00ADB5;
+}
+.pill:hover {
+	cursor: pointer;
+}
+.pill:last-child {
+	border: none !important;
+}
+.pill-selected {
+	background-color: #00adb5 !important;
+	color: white !important;
+}
+.pill-selected:last-child {
+	background-color: #00adb5 !important;
+	color: white !important;
+	border-top-right-radius: 4px !important;
+	border-bottom-right-radius: 4px !important;
+}
+.pill-selected:nth-child(1) {
+	background-color: #00adb5 !important;
+	color: white !important;
+	border-top-left-radius: 4px !important;
+	border-bottom-left-radius: 4px !important;
+}
