@@ -1,5 +1,6 @@
 import { useState } from "react";
 import starData from "../../fixtures/data.json";
+import "../css/button.css";
 
 const Main = () => {
 	const [checkedArray, setCheckedArray] = useState([]);
@@ -7,11 +8,13 @@ const Main = () => {
 	const [showList, setShowList] = useState(false);
 	return (
 		<div style={{ color: "white" }}>
-			{starData.map((item) => {
+			<h3>Select checkboxes for the Subject You Have completed.</h3>
+			{starData.map((item, idx) => {
 				return (
-					<div>
+					<div key={idx}>
 						<input
 							type="checkbox"
+							htmlFor="checkbox"
 							name={item.subject}
 							onChange={(e) => {
 								if (e.target.checked) {
@@ -36,14 +39,18 @@ const Main = () => {
 								console.log(recommendArray);
 							}}
 						/>
-						<label for={item.subject}>{item.subject}</label>
+						<label htmlFor={item.subject}>{item.subject}</label>
 					</div>
 				);
 			})}
-			<button onClick={() => setShowList(true)}>Recommend</button>
+			<div style={{ marginTop: "10px" }}>
+				<button onClick={() => setShowList(true)} className="add">
+					Recommend
+				</button>
+			</div>
 			{showList &&
-				recommendArray.map((item) => {
-					return <div>{item.subject}</div>;
+				recommendArray.map((item, idx) => {
+					return <div key={idx}>{item.subject}</div>;
 				})}
 		</div>
 	);
