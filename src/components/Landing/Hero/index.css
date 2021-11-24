@@ -1,0 +1,46 @@
+.hero-image {
+	width: 100%;
+	height: auto;
+}
+.hero-image-div,
+.hero-main {
+	width: 50%;
+}
+.hero-main {
+	display: flex;
+	flex-direction: column;
+}
+.hero-title {
+	font-size: 30px;
+	font-weight: bold;
+}
+.hero-text {
+	font-weight: medium;
+	font-size: 26px;
+	margin-top: 10px;
+}
+.button-div {
+	display: flex;
+	margin-top: 10px;
+}
+.button {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	font-style: normal;
+	font-weight: 600;
+	font-size: 18px;
+	line-height: 26px;
+	color: #fffdfa;
+	max-width: 200px;
+	background: #00adb5;
+	border-radius: 4px;
+	border: none;
+	padding: 20px 30px;
+	height: 2rem;
+}
+.advisor-image {
+	width: 100%;
+	height: auto;
+}

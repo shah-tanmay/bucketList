@@ -1,0 +1,28 @@
+.navbar {
+	background: #333333 !important;
+	display: flex;
+	justify-content: space-between;
+	padding: 1rem 5rem;
+}
+.navbar-heading {
+	display: flex;
+	justify-content: center;
+	font-size: 30px;
+	font-weight: bold;
+	color: #46bcde;
+	cursor: pointer;
+}
+.navbar-list {
+	margin-top: 10px;
+	font-size: 20px;
+	cursor: pointer;
+	display: flex;
+	gap: 3rem;
+}
+.navbar-item {
+	font-weight: medium;
+	color: white;
+}
+.navbar-item:hover {
+	color: #46bcde;
+}

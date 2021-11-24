@@ -1,0 +1,18 @@
+[
+	{
+		"title": "Course Recommender",
+		"image": "/images/illustration1.svg",
+		"flex": "row",
+		"textMain": "A project for the students by the students.",
+		"subText": " Get a list of courses to take up in the next semester of VIT according to your year of study.",
+		"buttonText": "Try Now!",
+		"link": "/subjectlist"
+	},
+	{
+		"title": "About us",
+		"image": "/images/illustration2.svg",
+		"flex": "row-reverse",
+		"textMain": "Course Recommender system was created upon the bases of a Knowledge Management System. This tool helps the student of the M.Tech Integrated - Software Engineering branch, of VIT Vellore.Students can be advised which program core subjects to take up in the forthcoming semesters, by enlisting the courses they have already finished.",
+		"subText": ""
+	}
+]

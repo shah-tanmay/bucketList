@@ -1,9 +1,7 @@
-import { useState } from "react";
 import { toast } from "react-toastify";
 
-const Input = ({ year, setYear }) => {
-	const [regNo, setRegNo] = useState();
-	const regNoRegex = /([0-9]{2}[A-Z]{3}[0-9]{4})/;
+const Input = ({ year, setYear, regNo, setRegNo }) => {
+	const regNoRegex = /([0-9]{2}[MIS]{3}[0-9]{4})/;
 	const onBlur = () => {
 		if (!regNoRegex.test(regNo)) {
 			toast.error("Please Enter Valid Registeration Number.");
