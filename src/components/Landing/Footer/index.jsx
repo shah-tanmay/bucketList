@@ -1,8 +1,7 @@
 const studentArray = [
-	{ name: "Niharika Gupta", regNo: "19MIS0111" },
-	{ name: "Niharika Gupta", regNo: "19MIS0111" },
-	{ name: "Niharika Gupta", regNo: "19MIS0111" },
-	{ name: "Niharika Gupta", regNo: "19MIS0111" },
+	{ name: "Niharika Gupta", regNo: "19MIS0263" },
+	{ name: "Thimmareddy Sirisha Reddy", regNo: "20MIS0168" },
+	{ name: "Mohammad Intiaz", regNo: "19MIS0392" },
 ];
 
 const Footer = () => {
